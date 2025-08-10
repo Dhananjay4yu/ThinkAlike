@@ -1,6 +1,6 @@
-streamlit==1.48.0
-scikit-learn==1.5.0
+streamlit==1.44.1
+scikit-learn==1.6.1
 nltk==3.9.1
 fuzzywuzzy==0.18.0
-distance==0.1.3
-beautifulsoup4==4.12.3
+Distance==0.1.3
+beautifulsoup4==4.13.3
