@@ -17,11 +17,18 @@ st.markdown("""
     [data-testid="stAppViewContainer"] {
         background: linear-gradient(135deg, #b3e0ff 0%, #e6f7ff 100%);
     }
+    /* Make input text black */
     .stTextInput>div>div>input {
         border: 1.5px solid #b6c6e0;
         border-radius: 8px;
         padding: 0.5rem;
         background-color: #f7fafc;
+        color: black;
+    }
+    /* Make labels ("Enter Question 1", "Enter Question 2") black */
+    label[data-testid="stWidgetLabel"] > div > p {
+        color: black !important;
+        font-weight: 500;
     }
     .stButton>button {
         background-color: #6a82fb;
@@ -38,6 +45,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 with st.container():
     st.markdown('<div class="main-container">', unsafe_allow_html=True)
