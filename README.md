@@ -1,4 +1,4 @@
-# Duplicate Question Detector
+# Question Pairs Semantic Meaning Detector
 
 A simple **Streamlit web app** that detects whether two questions are semantically similar (duplicates) using a pre-trained machine learning model.
 
