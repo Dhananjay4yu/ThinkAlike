@@ -30,9 +30,10 @@ st.markdown("""
         color: black !important;
         font-weight: 500;
     }
+    /* Make button text black */
     .stButton>button {
         background-color: #6a82fb;
-        color: white;
+        color: black;
         border-radius: 8px;
         padding: 0.5rem 1.5rem;
         border: none;
@@ -43,8 +44,13 @@ st.markdown("""
     .stButton>button:hover {
         background-color: #5a6ee5;
     }
+    /* Make success/info container text black */
+    .stAlert p {
+        color: black !important;
+    }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 with st.container():
