@@ -1,9 +1,15 @@
 import streamlit as st
 import helper
 import pickle
+import os
+
+# Get the folder where app.py is located
+BASE_DIR = os.path.dirname(__file__)
 
 # Load model
-model = pickle.load(open('model.pkl', 'rb'))
+model_path = os.path.join(BASE_DIR, 'model.pkl')
+with open(model_path, 'rb') as f:
+    model = pickle.load(f)
 
 # Custom CSS for sky-like soothing background and borders
 st.markdown("""
